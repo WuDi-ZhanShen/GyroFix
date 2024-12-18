@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shortcutoff">关闭服务</string>
+    <string name="shortcuton">开启服务</string>
+    <string name="input_200">请输入10~200的整数</string>
+    <string name="update_notification">通知显示实时采样率</string>
+    <string name="enable_notification">开启前台运行通知</string>
+    <string name="input_5">请输入1~5的整数</string>
+    <string name="app_name">陀螺仪修复器</string>
+    <string name="tile_name">启动修复</string>
+    <string name="update_interval">通知更新间隔(s)</string>
+    <string name="sample_rate">采样率(Hz)</string>
+    <string name="service_state">服务运行状态：</string>
+    <string name="help">使用帮助</string>
+    <string name="hide_recent">隐藏后台任务卡片</string>
+    <string name="exit">退出</string>
+    <string name="agree">同意</string>
+    <string name="privacy_title">隐私政策</string>
+    <string name="privacy_content">本应用不会收集您的任何信息，且完全不包含任何联网功能。继续使用则代表您同意上述隐私政策。\n</string>
+    <string name="restart_service">重启服务后生效</string>
+    <string name="max">最大</string>
+    <string name="help_title">使用帮助</string>
+    <string name="enderstand">明白!</string>
+    <string name="help_content">本应用的原理：启动陀螺仪传感器，并将其采样率设置为指定值。\n\n设置采样率是全局生效的。本应用运行期间，对所有正在使用陀螺仪的APP都生效。\n\n在开发者的设备上，可将CF手游的采样率从50Hz提升至430Hz。\n\n以下是一些问题和解答：\n\n1.采样率是什么，和灵敏度一样吗？\n答：采样率就是陀螺仪每秒回报多少次数据，和灵敏度完全无关。采样率越高，陀螺仪反应越快、越跟手；但也会增加少许发热耗电，请您自行权衡。\n\n2.为什么实际采样率和设置的略微不一致？\n答：实际采样率会被安卓系统量化处理。比如设置了81~100Hz区间内的采样率，但对应的实际采样率都为100Hz。\n\n3.最大采样率是多少？\n答：由设备的陀螺仪硬件决定，一般来说至少为200Hz。您可以将采样率拉满，从而启用最大采样率。\n\n4.有除了发热耗电之外的副作用吗？\n答：目前发现高采样率会让CF手游内辅瞄变弱。具体变弱机制尚不清楚，时有时无。\n\n5.一定得进游戏前启动本APP，才能生效吗？\n答：任何时候启动都可以，立即生效。陀螺仪采样率会立刻提升。</string>
+    <string name="gyro_unsupport">您的设备不支持陀螺仪</string>
+    <string name="noti_text">当前采样率：</string>
+    <string name="noti_title">陀螺仪修复服务运行中...</string>
+    <string name="noti_stop">停止服务</string>
+    <string name="noti_realtime_text">实时采样率：</string>
+</resources>

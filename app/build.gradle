@@ -1,0 +1,46 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.gyrofix'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.gyrofix"
+        minSdk 21
+        targetSdk 34
+        versionCode 7
+        versionName "7.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    signingConfigs {
+        release {
+            storeFile file('D:\\key.keystore') // Keystore文件的路径
+            storePassword 'wewewe' // Keystore密码
+            keyAlias 'key0' // Key别名
+            keyPassword 'wewewe' // Key密码
+        }
+    }
+    buildTypes {
+        release {
+            shrinkResources false
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+    }
+    lintOptions{
+        abortOnError false
+    }
+}
+
+
+dependencies {
+
+}
